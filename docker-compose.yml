@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+mf:
+build: .
+image: markets-fuels:latest
+working_dir: /app
+volumes:
+- ./:/app
+command: ["bash", "-lc", "make fetch && make validate && make export"]

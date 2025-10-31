@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+
+
+# Data/artifacts
+export/
+!export/.keep
+*.parquet
+*.csv
+
+
+# OS
+.DS_Store
