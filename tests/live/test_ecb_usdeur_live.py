@@ -1,5 +1,5 @@
-import pandas as pd
 from mf.extract.ecb_fx import fetch_eur_usd
+
 
 def test_usdeur_identity_live():
     df = fetch_eur_usd("2025-10-01", "2025-10-10")

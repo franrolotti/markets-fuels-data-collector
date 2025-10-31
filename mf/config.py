@@ -1,7 +1,8 @@
 
+import os
 from dataclasses import dataclass, field
 from typing import Dict
-import os
+
 
 @dataclass
 class Settings:

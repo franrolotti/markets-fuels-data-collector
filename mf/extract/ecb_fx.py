@@ -1,7 +1,7 @@
 import pandas as pd
 import requests
-from ..config import settings
 
+from ..config import settings
 
 KEY = "D.USD.EUR.SP00.A"  # daily USD per EUR reference rate
 
