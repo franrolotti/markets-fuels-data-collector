@@ -5,6 +5,7 @@ from ..config import settings
 
 KEY = "D.USD.EUR.SP00.A"  # daily USD per EUR reference rate
 
+
 def fetch_eur_usd(start: str, end: str, http_timeout: int = None) -> pd.DataFrame:
     base = settings.ecb_base.rstrip("/")
     url = (
