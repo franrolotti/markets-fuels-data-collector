@@ -1,12 +1,45 @@
 [build-system]
-requires = ["setuptools", "wheel"]
+# It's a good practice to require a modern version of setuptools
+requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "markets-fuels-data-collector"
 version = "0.0.1"
+description = "A data collector for markets and fuels data."
+readme = "README.md"
 requires-python = ">=3.10"
-dependencies = ["pandas", "requests"]
+license = { file = "LICENSE" }
+# TODO: Replace with actual author details
+authors = [{name = "Example Author", email = "author@example.com"}]
+keywords = ["data", "markets", "fuels", "collector"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+dependencies = [
+    "pandas",
+    "requests",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/example/markets-fuels-data-collector"
+"Bug Tracker" = "https://github.com/example/markets-fuels-data-collector/issues"
 
 [tool.setuptools]
-packages = ["mf", "mf.extract"]
+# Automatically discover all packages under the project root
+packages = "find:"
+
+[tool.setuptools.packages.find]
+# Search for packages in the project root directory ('.')
+where = ["..."]
+
+[tool.isort]
+# Use the 'black' profile for compatibility with the black formatter.
+# The line_length is inherited from black's default (88) and is not needed here.
+profile = "black"
