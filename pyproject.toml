@@ -1,12 +1,17 @@
 [build-system]
-requires = ["setuptools", "wheel"]
+requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "markets-fuels-data-collector"
 version = "0.0.1"
 requires-python = ">=3.10"
-dependencies = ["pandas", "requests"]
+dependencies = [
+  "pandas",
+  "requests",
+  "yfinance",
+  "pyarrow",
+]
 
 [tool.setuptools]
 packages = ["mf", "mf.extract"]
