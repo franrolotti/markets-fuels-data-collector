@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: markets-fuels-data-collector
+Version: 0.0.1
+Requires-Python: >=3.10
+Requires-Dist: pandas
+Requires-Dist: requests
+Requires-Dist: yfinance
+Requires-Dist: pyarrow

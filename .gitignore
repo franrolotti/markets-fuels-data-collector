@@ -1,16 +1,44 @@
-# Python
+# --- Python ---
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.dll
+
+# Virtual envs
 .venv/
-.env
+venv/
+env/
 
+# Build / packaging
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
 
-# Data/artifacts
-export/
-!export/.keep
-*.parquet
-*.csv
+# Test / tooling caches
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
 
-
-# OS
+# Editors / OS
+.vscode/
+.idea/
 .DS_Store
+Thumbs.db
+
+# Data / outputs (keep if you truly want them tracked)
+*.parquet
+*.feather
+*.csv
+*.tmp
+*.log
+
+# Notebooks
+*.ipynb
