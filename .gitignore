@@ -39,6 +39,7 @@ Thumbs.db
 *.csv
 *.tmp
 *.log
+data/
 
 # Notebooks
 *.ipynb
